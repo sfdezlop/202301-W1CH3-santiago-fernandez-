@@ -1,3 +1,79 @@
-h1 {
-  color: blueviolet;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div {
+  display: grid;
+  grid-template-columns: repeat(4, 170px);
+  grid-template-rows: 100px 40px repeat(4, 40px) 80px;
+  justify-content: center;
+}
+
+.listadelacompra {
+  grid-column: span 2;
+  background-color: #5169a7;
+  display: flex;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.article {
+  font-size: 1em;
+  color: black;
+  grid-column: span 2;
+  background-color: #d1bead;
+}
+
+.delete {
+  grid-column: span 1;
+  background-color: #d1bead;
+}
+
+.price {
+  grid-column: span 1;
+  background-color: #d1bead;
+}
+
+.total {
+  grid-column: span 2;
+  background-color: #d1bead;
+  font-weight: bold;
+}
+
+.comprados {
+  grid-column: span 2;
+  background-color: #d09d72;
+  font-weight: bold;
+}
+
+.imagencss {
+  grid-column: span 4;
+  background-color: #5169a7;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+
+/* body img {
+  grid-column: span 4;
+  background-color: #5169a7;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+} */
+
+button {
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  border-radius: 75%;
+  border-color: #531886;
+  background-color: #531886;
+  color: #d09d72;
 }
